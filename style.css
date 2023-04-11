@@ -6,7 +6,7 @@
 }
 body{
     display: flex;
-    justify-content: center;
+    
      align-items: center;
     flex-direction: column;
     
@@ -20,6 +20,7 @@ body{
     display: flex;
     background-color: #F3F5FC;
 }
+
 footer{
     width: 94rem;
     height: 200px;
