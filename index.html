@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Desafio 1 Encriptador</title>
+  </head>
+  <body>
+    <main class="aplicacion">
+      <section class="logo">
+        <img src="./assets/logo.png" alt="" />
+      </section>
+      <section class="input-text">
+        <div class="input-caja">
+          <div class="contenedor-input">
+            <textarea name="" id="texto" cols="30" rows="10" onclick="this.value='';" >Ingrese el texto aquí</textarea>
+          </div>
+          <div class="botones">
+            <button id="encriptar">Encriptar</button>
+            <button id="desencriptar">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+      <section class="textarea">
+        <div class="textarea-caja" id="app">
+            <div class="textarea-img" id="imagen">
+                <img src="./assets/rectangle 1.png" alt="" class="imagen" 
+                ">
+            </div>
+            <div class="textarea-text" id="texto-poner">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="boton-copiar" id="estilosbtn" >
+                <button id="copiar" style="display: flex; align-items: center;
+                justify-content: center; display: none;">Copiar</button>
+            </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

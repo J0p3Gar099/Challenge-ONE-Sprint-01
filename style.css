@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.aplicacion{
+    margin-top: 20px;
+    width: 94rem;
+    height: 900px;
+    
+    display: flex;
+    background-color: #F3F5FC;
+}
+
+.logo{
+    width: 10%;
+    height: 100%;
+    padding: 1.8rem 1rem;
+}
+
+.input-text{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textarea{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-caja{
+    width: 95%;
+    height: 85%;
+    
+}
+.textarea-caja{
+    width: 87%;
+    background-color: white;
+    height: 92%;
+    border-radius: 1.8rem;
+    box-shadow: -7px 6px 10px #e5e5e581;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+.textarea-img{
+    width: 90%;
+    height: 40%;
+}
+.textarea-text{
+    height: 34%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textarea-text p,h2{
+    text-align: center;
+    width: 70%;
+}
+.imagen{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contenedor-input{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones{
+    width: 80%;
+    margin: 0 auto;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+button{
+    width: 20rem;
+    padding: 1.5rem 0;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+#encriptar{
+    background-color: #0A3871;
+    color: #F3F5FC;
+
+}
+#desencriptar{
+    background-color: #F3F5FC;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+#copiar{
+    background-color: white;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    
+    
+}
+textarea{
+    width: 80%;
+    height: 70%;
+    font-size: 2rem;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: none;
+    
+}
+
+
+/*Aqui se aplicara las media para que la pagina sea responsiva*/
+
+@media (max-width: 1400px) {
+
+    .aplicacion{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0;
+        display: flex;
+        justify-content: start;
+        height: 100%;
+    }
+    .imagen{
+        display: none;
+        height: 0%;
+    }
+    .textarea-img{
+        height: 0%;
+    }
+    .textarea,.input-text,.logo{
+        width: 100%;
+    }
+    .logo{
+        height: 10%;
+    }
+    .input-text{
+        height: 60rem;
+    }
+    .textarea{
+        
+        height: auto;
+    }
+    .boton-copiar{
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textarea-text{
+        min-height: 6rem;
+        height: 27%;
+        margin-top: 40px;
+    }
+    .textarea-caja{
+        width: 80%;
+        gap: 0;
+    }
+    .input-text{
+        align-items: start;
+    }
+    #copiar{
+        
+        width: 25rem;
+        display: none;
+    }
+    
+
+}
+
+@media (max-width: 900px) {
+    .botones{
+        width: 100%;
+        margin: 0 ;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        
+        
+    }
+    #copiar{
+        
+        width: 80%;
+        display: none;
+    }
+    button{
+        width: 30rem;
+        font-size: 1.5rem;
+    }
+    .textarea-text{
+        min-height: 9rem;
+        width: 70%;
+        gap: 10px;
+    }
+    .aplicacion{
+        width: 100vw;
+    }
+    body{
+        display: flex;
+        justify-content: start;
+        
+    }
+    button{
+        width: 90%;
+       
+    }
+    .textarea-text p,h2{
+        
+        width: 100%;
+    }
+    
+
+}
+
